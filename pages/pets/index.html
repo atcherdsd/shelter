@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Pets</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap" 
+    rel="stylesheet">
+</head>
+<body>
+    <div class="blackout"></div>
+    <div id="pets"></div>
+    <header class="header">
+
+        <div class="header-content">
+            <div class="header-logo">
+                <a href="../../pages/main/index.html" class="logo-title"><h1>Cozy House</h1></a>
+                <a href="../../pages/main/index.html" class="logo-subtitle">Shelter for pets in Boston</a>
+            </div>
+                
+            <nav class="menu">
+                <ul class="links">
+                    <li ><a href="../../pages/main/index.html" class="nav-link" data-i18="about">About the shelter</a></li>
+                    <li ><a href="#pets" class="nav-link active" data-i18="pets">Our pets</a></li>
+                    <li ><a href="../../pages/main/index.html#help" class="nav-link" data-i18="help">Help the shelter</a></li>
+                    <li ><a href="#contacts" class="nav-link" data-i18="contacts">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <div class="burger"></div>
+            <div class="mobile-menu">
+                <div class="header-logo__intomenu">
+                    <div class="logo-title"><h1>Cozy House</h1></div>
+                    <div class="logo-subtitle">Shelter for pets in Boston</div>
+                </div>
+                <nav class="burger-menu">
+                    <ul class="links__burger">
+                        <li><a href="../../pages/main/index.html" class="nav-link" data-i18="about">About the shelter</a></li>
+                        <li><a href="#pets" class="nav-link active" data-i18="pets">Our pets</a></li>
+                        <li><a href="../../pages/main/index.html#help" class="nav-link" data-i18="help">Help the shelter</a></li>
+                        <li><a href="#contacts" class="nav-link" data-i18="contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        <div class="main-content">
+
+            <h3>Our friends who<br> are looking for a house</h3>
+            <div class="wrapper-cards">
+                <div class="cards-content">
+                    <div class="card-item" data-id="Katrine">
+                        <img src="../../assets/images/pets-katrine.png" alt="Cat">
+                        <p class="capture">Katrine</p>
+                        <button class="button-secondary" data-id="Katrine">Learn more</button>
+                    </div>
+                    <div class="card-item" data-id="Jennifer">
+                        <img src="../../assets/images/pets-jennifer.png" alt="Dog">
+                        <p class="capture">Jennifer</p>
+                        <button class="button-secondary" data-id="Jennifer">Learn more</button>
+                    </div>
+                    <div class="card-item" data-id="Woody">
+                        <img src="../../assets/images/pets-woody.png" alt="Big dog">
+                        <p class="capture">Woody</p>
+                        <button class="button-secondary" data-id="Woody">Learn more</button>
+                    </div>
+                    <div class="card-item" data-id="Sophia">
+                        <img src="../../assets/images/sophia.png" alt="Little dog">
+                        <p class="capture">Sophia</p>
+                        <button class="button-secondary" data-id="Sophia">Learn more</button>
+                    </div>
+                    <div class="card-item" data-id="Timmy">
+                        <img src="../../assets/images/pets-timmy.png" alt="Cat">
+                        <p class="capture">Timmy</p>
+                        <button class="button-secondary" data-id="Timmy">Learn more</button>
+                    </div>
+                    <div class="card-item" data-id="Charly">
+                        <img src="../../assets/images/pets-charly.png" alt="Dog">
+                        <p class="capture">Charly</p>
+                        <button class="button-secondary" data-id="Charly">Learn more</button>
+                    </div>
+                    <div class="card-item" data-id="Scarlett">
+                        <img src="../../assets/images/pets-scarlet.png" alt="Little dog">
+                        <p class="capture">Scarlett</p>
+                        <button class="button-secondary" data-id="Scarlett">Learn more</button>
+                    </div>
+                    <div class="card-item" data-id="Freddie">
+                        <img src="../../assets/images/freddie.png" alt="Little cat">
+                        <p class="capture">Freddie</p>
+                        <button class="button-secondary" data-id="Freddie">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navigation" id="contacts">
+                <button id="startPage" class="btn-arrow__fast-left disabled">&lt;&lt;</button>
+                <button id="prevPage" class="btn-arrow__left disabled">&lt;</button>
+                <button id="numberPage" class="btn-arrow__number active">1</button>
+                <button id="nextPage" class="btn-arrow__right">&gt;</button>
+                <button id="lastPage" class="btn-arrow__fast-right">&gt;&gt;</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        
+        <div class="footer-content">
+            <div class="contacts">
+                <div class="contacts-title">For questions and suggestions</div>
+                <div class="mail">
+                    <a href="mailto:email@shelter.com"><img src="../../assets/images/mail.png" alt="Mail"></a>
+                    <a href="mailto:email@shelter.com"><div class="email">email@shelter.com</div></a>
+                </div>
+                <div class="phone">
+                    <a href="tel:+136745677554"><img src="../../assets/images/phone.png" alt="Phone"></a>
+                    <a href="tel:+136745677554"><div class="number-phone">+13 674 567 75 54</div></a>
+                </div>
+            </div>
+
+            <div class="locations">
+                <div class="locations-title">We are waiting for your visit</div>
+                <div class="boston">
+                    <a href="https://www.google.com/maps/place/J.+Whitfield+Larrabee/@42.3092577,-71.120704,19.29z/data=!4m13!1m7!3m6!1s0x89e37931320dbc11:0x1afedefc225456fa!2zQ2VudHJlIFN0LCBNYXNzYWNodXNldHRzLCDQodCo0JA!3b1!8m2!3d42.3220204!4d-71.1098548!3m4!1s0x89e3799586224dab:0xe8e88141e50ca183!8m2!3d42.3091745!4d-71.1204828?hl=ru" target="blank"><img src="../../assets/images/pin.png" alt="Pin"></a>
+                    <a href="https://www.google.com/maps/place/J.+Whitfield+Larrabee/@42.3092577,-71.120704,19.29z/data=!4m13!1m7!3m6!1s0x89e37931320dbc11:0x1afedefc225456fa!2zQ2VudHJlIFN0LCBNYXNzYWNodXNldHRzLCDQodCo0JA!3b1!8m2!3d42.3220204!4d-71.1098548!3m4!1s0x89e3799586224dab:0xe8e88141e50ca183!8m2!3d42.3091745!4d-71.1204828?hl=ru" target="blank"><div class="boston-address">1 Central Street, Boston (entrance from the store)</div></a>
+                </div>
+                <div class="london">
+                    <a href="https://www.google.com/maps/place/Sands+End+Arts+%26+Community+Centre/@51.4696598,-0.1962652,17z/data=!4m12!1m6!3m5!1s0x48760f79376fa0e3:0x202ac3af5c1ea4ec!2z0J_QsNGA0Log0K7Qsw!8m2!3d51.4691953!4d-0.1941945!3m4!1s0x48760f9c6f832f5d:0x3eda1bda9a17ce0c!8m2!3d51.4697312!4d-0.1968088?hl=ru" target="blank"><img src="../../assets/images/pin.png" alt="Pin"></a>
+                    <a href="https://www.google.com/maps/place/Sands+End+Arts+%26+Community+Centre/@51.4696598,-0.1962652,17z/data=!4m12!1m6!3m5!1s0x48760f79376fa0e3:0x202ac3af5c1ea4ec!2z0J_QsNGA0Log0K7Qsw!8m2!3d51.4691953!4d-0.1941945!3m4!1s0x48760f9c6f832f5d:0x3eda1bda9a17ce0c!8m2!3d51.4697312!4d-0.1968088?hl=ru" target="blank"><div class="london-address">18 South Park, London</div></a>
+                </div>
+                    
+            </div>
+            <div class="photo-footer">
+                <img src="../../assets/images/footer-puppy.png" alt="Puppy">
+            </div>
+        </div>
+        
+    </footer>
+    <div id="popup"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
