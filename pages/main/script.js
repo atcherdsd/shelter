@@ -66,7 +66,7 @@ const cardItems = document.querySelectorAll('.card-item');
 const btnSecondary = document.querySelectorAll('.button-secondary');
 
 let digits = [PETS[4], PETS[0], PETS[2]];
-function changeImage(event) {
+function changeImage() {
     
     let set = new Set();
     while (set.size < 3) {
@@ -77,24 +77,23 @@ function changeImage(event) {
     }
     digits = Array.from(set);
 
-    if (event.target.classList.contains('btn__navigation')) {
-        imageItems.forEach((img, i) => {
-            img.src = digits[i].img;
-            img.alt = digits[i].name;
-        });
-        imageCaptures.forEach((val, i) => {
-            val.textContent = digits[i].name;
-        });
-        cardItems.forEach((ident, i) => {
-            ident.dataset.id = digits[i].name;
-        });
-        btnSecondary.forEach((ident, i) => {
-            ident.dataset.id = digits[i].name;
-        });
-    }
+    imageItems.forEach((img, i) => {
+        img.src = digits[i].img;
+        img.alt = digits[i].name;
+    });
+    imageCaptures.forEach((capture, i) => {
+        capture.textContent = digits[i].name;
+    });
+    cardItems.forEach((card, i) => {
+        card.dataset.id = digits[i].name;
+    });
+    btnSecondary.forEach((btn, i) => {
+        btn.dataset.id = digits[i].name;
+    });
 }
-btnNavigation.forEach(btn => btn.addEventListener('click', changeImage));
-
+btnNavigation.forEach(btn => btn.addEventListener('click', () => {
+    setTimeout(changeImage, 450);
+}));
 
 //-----6. CAROUSEL----------//
 
@@ -104,14 +103,10 @@ const btnNavigationRight = document.querySelector('.btn-arrow__right');
 
 function moveToLeft() {
     carousel.classList.add('transition-left');
-    if (carousel.classList.contains('transition-right'))
-        carousel.classList.remove('transition-right')
 }
 
 function moveToRight() {
     carousel.classList.add('transition-right');
-    if (carousel.classList.contains('transition-left'))
-        carousel.classList.remove('transition-left')
 }
 
 function deleteClassSlider() {
@@ -133,9 +128,8 @@ btnNavigationRight.addEventListener('click', () => {
 const popup = document.getElementById('popup');
 
 function openPopup(e) {
-    let pet = e.currentTarget.getElementsByClassName('button-secondary')[0].dataset.id;
-    let petName = pet;
-    return PETS.filter(item => item.name === petName)[0];
+    const petNameById = e.currentTarget.getElementsByClassName('button-secondary')[0].dataset.id;
+    return PETS.filter(item => item.name === petNameById)[0];
 }
 
 function createPopupElements(pet) {
